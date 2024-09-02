@@ -1,0 +1,147 @@
+body{
+    background-color: rgba(9,9,9,255);
+    padding: 0;
+    margin: 0;
+    min-width: 526px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container-md{
+    color: white;
+}
+.title h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.search-bar input{
+    width: 70%;
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(9,9,9,255);
+}
+.recommend button{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    background-color: burlywood;
+    color: whitesmoke;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 5rem;
+    outline: none;
+    border: none;
+}
+.no-hover {
+    background-color: burlywood; 
+    border-color: burlywood; 
+}
+
+.no-hover:hover,
+.no-hover:focus,
+.no-hover:active {
+    background-color: burlywood; 
+    border-color: burlywood; 
+    box-shadow: none;
+}
+
+.recommended_movies{
+    color: rgba(50,50,50,255);
+    text-align: center;
+    width: 100%;
+}
+.recommended_movies .list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.recommended_movies .list .movie .poster{
+    height: 21rem;
+    width: 14rem;
+    background-size:cover;
+}
+.recommended_movies .list .movie .title{
+    display: flex;
+    white-space: normal;
+    height: 3.5rem;
+    width: 14rem;
+    font-style: 1.5rem;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    justify-content: center;
+}
+@media (max-width: 1500px)
+{
+    .recommended_movies .list .movie:nth-child(5){
+        display: none;
+    }
+}
+@media (max-width: 1200px)
+{
+    .recommended_movies .list .movie:nth-child(4){
+        display: none;
+    }
+}
+@media (max-width: 720px)
+{
+    .recommended_movies .list .movie:nth-child(3){
+        display: none;
+    }
+}
+.load{
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 55rem;
+    max-height: 35rem;
+    overflow-y: auto;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    margin-top: 5px;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; 
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.dropdown-menu.show {
+    display: block; /* Show when there are items */
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: turquoise;
+}
